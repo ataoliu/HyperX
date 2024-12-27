@@ -1,0 +1,105 @@
+{
+  "template": "app",
+  "imports": {
+    "Volo.Abp.LeptonXLiteTheme": {
+      "version": "4.0.3",
+      "isInstalled": true
+    },
+    "Volo.Abp.Account": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.OpenIddict": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.Identity": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.TenantManagement": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.SettingManagement": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.PermissionManagement": {
+      "version": "9.0.2",
+      "isInstalled": true
+    },
+    "Volo.Abp.FeatureManagement": {
+      "version": "9.0.2",
+      "isInstalled": true
+    }
+  },
+  "folders": {
+    "items": {
+      "src": {},
+      "test": {}
+    }
+  },
+  "packages": {
+    "HyperX.Application": {
+      "path": "src/HyperX.Application/HyperX.Application.abppkg",
+      "folder": "src"
+    },
+    "HyperX.Application.Tests": {
+      "path": "test/HyperX.Application.Tests/HyperX.Application.Tests.abppkg",
+      "folder": "test"
+    },
+    "HyperX.Domain.Shared": {
+      "path": "src/HyperX.Domain.Shared/HyperX.Domain.Shared.abppkg",
+      "folder": "src"
+    },
+    "HyperX.Application.Contracts": {
+      "path": "src/HyperX.Application.Contracts/HyperX.Application.Contracts.abppkg",
+      "folder": "src"
+    },
+    "HyperX.HttpApi": {
+      "path": "src/HyperX.HttpApi/HyperX.HttpApi.abppkg",
+      "folder": "src"
+    },
+    "HyperX.HttpApi.Client": {
+      "path": "src/HyperX.HttpApi.Client/HyperX.HttpApi.Client.abppkg",
+      "folder": "src"
+    },
+    "HyperX.Web": {
+      "path": "src/HyperX.Web/HyperX.Web.abppkg",
+      "folder": "src"
+    },
+    "HyperX.Web.Tests": {
+      "path": "test/HyperX.Web.Tests/HyperX.Web.Tests.abppkg",
+      "folder": "test"
+    },
+    "HyperX.EntityFrameworkCore.Tests": {
+      "path": "test/HyperX.EntityFrameworkCore.Tests/HyperX.EntityFrameworkCore.Tests.abppkg",
+      "folder": "test"
+    },
+    "HyperX.EntityFrameworkCore": {
+      "path": "src/HyperX.EntityFrameworkCore/HyperX.EntityFrameworkCore.abppkg",
+      "folder": "src"
+    },
+    "HyperX.TestBase": {
+      "path": "test/HyperX.TestBase/HyperX.TestBase.abppkg",
+      "folder": "test"
+    },
+    "HyperX.Domain.Tests": {
+      "path": "test/HyperX.Domain.Tests/HyperX.Domain.Tests.abppkg",
+      "folder": "test"
+    },
+    "HyperX.HttpApi.Client.ConsoleTestApp": {
+      "path": "test/HyperX.HttpApi.Client.ConsoleTestApp/HyperX.HttpApi.Client.ConsoleTestApp.abppkg",
+      "folder": "test"
+    },
+    "HyperX.DbMigrator": {
+      "path": "src/HyperX.DbMigrator/HyperX.DbMigrator.abppkg",
+      "folder": "src"
+    },
+    "HyperX.Domain": {
+      "path": "src/HyperX.Domain/HyperX.Domain.abppkg",
+      "folder": "src"
+    }
+  }
+}
