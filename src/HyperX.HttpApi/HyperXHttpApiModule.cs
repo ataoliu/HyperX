@@ -1,41 +1,24 @@
-﻿using Localization.Resources.AbpUi;
-using HyperX.Localization;
-using Volo.Abp.Account;
-using Volo.Abp.SettingManagement;
-using Volo.Abp.FeatureManagement;
-using Volo.Abp.Identity;
+﻿using Volo.Abp.Identity;
 using Volo.Abp.Modularity;
-using Volo.Abp.PermissionManagement.HttpApi;
-using Volo.Abp.Localization;
-using Volo.Abp.TenantManagement;
+using HyperX.Application;
 
-namespace HyperX;
-
- [DependsOn(
-    typeof(HyperXApplicationContractsModule),
-    typeof(AbpPermissionManagementHttpApiModule),
-    typeof(AbpSettingManagementHttpApiModule),
-    typeof(AbpAccountHttpApiModule),
-    typeof(AbpIdentityHttpApiModule),
-    typeof(AbpTenantManagementHttpApiModule),
-    typeof(AbpFeatureManagementHttpApiModule)
-    )]
-public class HyperXHttpApiModule : AbpModule
+namespace HyperX.HttpApi
 {
-    public override void ConfigureServices(ServiceConfigurationContext context)
+    // [DependsOn(
+    //    typeof(HyperXApplicationContractsModule),
+    //    typeof(AbpPermissionManagementHttpApiModule),
+    //    typeof(AbpSettingManagementHttpApiModule),
+    //    typeof(AbpAccountHttpApiModule),
+    //    typeof(AbpIdentityHttpApiModule),
+    //    typeof(AbpTenantManagementHttpApiModule),
+    //    typeof(AbpFeatureManagementHttpApiModule)
+    //    )]
+    [DependsOn(
+        typeof(AbpIdentityHttpApiModule),
+        typeof(HyperXApplicationModule)
+    )]
+    public class HyperXHttpApiModule : AbpModule
     {
-        ConfigureLocalization();
-    }
-
-    private void ConfigureLocalization()
-    {
-        Configure<AbpLocalizationOptions>(options =>
-        {
-            options.Resources
-                .Get<HyperXResource>()
-                .AddBaseTypes(
-                    typeof(AbpUiResource)
-                );
-        });
+       
     }
 }

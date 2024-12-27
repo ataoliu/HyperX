@@ -1,7 +1,7 @@
 ﻿using HyperX.Localization;
 using Volo.Abp.Application.Services;
 
-namespace HyperX;
+namespace HyperX.Application;
 
 /* Inherit your application services from this class.
  */

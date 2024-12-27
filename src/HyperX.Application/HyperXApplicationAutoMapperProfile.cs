@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace HyperX;
+namespace HyperX.Application;
 
 public class HyperXApplicationAutoMapperProfile : Profile
 {

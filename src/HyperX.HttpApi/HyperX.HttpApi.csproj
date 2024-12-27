@@ -5,11 +5,16 @@
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
-    <RootNamespace>HyperX</RootNamespace>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <!-- <DocumentationFile>..\HyperX.HttpApi.Hosting\HyperX.HttpApi.xml</DocumentationFile> -->
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\HyperX.HttpApi.xml</DocumentationFile>
 
+  </PropertyGroup>
+  
   <ItemGroup>
     <ProjectReference Include="..\HyperX.Application.Contracts\HyperX.Application.Contracts.csproj" />
+    <ProjectReference Include="..\HyperX.Application\HyperX.Application.csproj" />
   </ItemGroup>
 
   <ItemGroup>
@@ -20,7 +25,6 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Identity.HttpApi" Version="9.0.2" />
-    <PackageReference Include="Volo.Abp.Account.HttpApi" Version="9.0.2" />
     <PackageReference Include="Volo.Abp.TenantManagement.HttpApi" Version="9.0.2" />
   </ItemGroup>
 

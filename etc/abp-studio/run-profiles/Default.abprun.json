@@ -3,7 +3,7 @@
     "HyperX.Web": {
       "type": "dotnet-project",
       "launchUrl": "https://localhost:44313",
-      "path": "../../../src/HyperX.Web/HyperX.Web.csproj",
+      "path": "../../../src/HyperX.HttpApi.Hosting/HyperX.HttpApi.Hosting.csproj",
       "kubernetesService": ".*-web$",
       "execution": {
         "order": 2

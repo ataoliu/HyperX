@@ -6,8 +6,8 @@ using Microsoft.AspNetCore.Mvc.ApplicationParts;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using HyperX.EntityFrameworkCore;
-using HyperX.Web;
-using HyperX.Web.Menus;
+// using HyperX.Web;
+// using HyperX.Web.Menus;
 using Volo.Abp.AspNetCore.TestBase;
 using Volo.Abp.Modularity;
 using Volo.Abp.OpenIddict;
@@ -17,7 +17,7 @@ namespace HyperX;
 
 [DependsOn(
     typeof(AbpAspNetCoreTestBaseModule),
-    typeof(HyperXWebModule),
+    // typeof(HyperXWebModule),
     typeof(HyperXApplicationTestModule),
     typeof(HyperXEntityFrameworkCoreTestModule)
 )]
@@ -32,14 +32,14 @@ public class HyperXWebTestModule : AbpModule
 
         context.Services.PreConfigure<IMvcBuilder>(builder =>
         {
-            builder.PartManager.ApplicationParts.Add(new CompiledRazorAssemblyPart(typeof(HyperXWebModule).Assembly));
+            // builder.PartManager.ApplicationParts.Add(new CompiledRazorAssemblyPart(typeof(HyperXWebModule).Assembly));
         });
 
-        context.Services.GetPreConfigureActions<OpenIddictServerBuilder>().Clear();
-        PreConfigure<AbpOpenIddictAspNetCoreOptions>(options =>
-        {
-            options.AddDevelopmentEncryptionAndSigningCertificate = true;
-        });
+        // context.Services.GetPreConfigureActions<OpenIddictServerBuilder>().Clear();
+        // PreConfigure<AbpOpenIddictAspNetCoreOptions>(options =>
+        // {
+        //     options.AddDevelopmentEncryptionAndSigningCertificate = true;
+        // });
     }
 
     public override void ConfigureServices(ServiceConfigurationContext context)
@@ -63,7 +63,7 @@ public class HyperXWebTestModule : AbpModule
     {
         services.Configure<AbpNavigationOptions>(options =>
         {
-            options.MenuContributors.Add(new HyperXMenuContributor());
+            // options.MenuContributors.Add(new HyperXMenuContributor());
         });
     }
 }

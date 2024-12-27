@@ -1,29 +1,18 @@
 using Microsoft.EntityFrameworkCore;
-using Volo.Abp.AuditLogging.EntityFrameworkCore;
-using Volo.Abp.BackgroundJobs.EntityFrameworkCore;
-using Volo.Abp.BlobStoring.Database.EntityFrameworkCore;
+
 using Volo.Abp.Data;
 using Volo.Abp.DependencyInjection;
 using Volo.Abp.EntityFrameworkCore;
-using Volo.Abp.EntityFrameworkCore.Modeling;
-using Volo.Abp.FeatureManagement.EntityFrameworkCore;
 using Volo.Abp.Identity;
-using Volo.Abp.Identity.EntityFrameworkCore;
-using Volo.Abp.PermissionManagement.EntityFrameworkCore;
-using Volo.Abp.SettingManagement.EntityFrameworkCore;
-using Volo.Abp.OpenIddict.EntityFrameworkCore;
-using Volo.Abp.TenantManagement;
-using Volo.Abp.TenantManagement.EntityFrameworkCore;
 
 namespace HyperX.EntityFrameworkCore;
 
-[ReplaceDbContext(typeof(IIdentityDbContext))]
-[ReplaceDbContext(typeof(ITenantManagementDbContext))]
+
 [ConnectionStringName("Default")]
 public class HyperXDbContext :
-    AbpDbContext<HyperXDbContext>,
-    ITenantManagementDbContext,
-    IIdentityDbContext
+    AbpDbContext<HyperXDbContext>
+    // ITenantManagementDbContext,
+    // IIdentityDbContext
 {
     /* Add DbSet properties for your Aggregate Roots / Entities here. */
 
@@ -52,8 +41,8 @@ public class HyperXDbContext :
     public DbSet<IdentitySession> Sessions { get; set; }
 
     // Tenant Management
-    public DbSet<Tenant> Tenants { get; set; }
-    public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
+    // public DbSet<Tenant> Tenants { get; set; }
+    // public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
     #endregion
 
@@ -69,15 +58,15 @@ public class HyperXDbContext :
 
         /* Include modules to your migration db context */
 
-        builder.ConfigurePermissionManagement();
-        builder.ConfigureSettingManagement();
-        builder.ConfigureBackgroundJobs();
-        builder.ConfigureAuditLogging();
-        builder.ConfigureFeatureManagement();
-        builder.ConfigureIdentity();
-        builder.ConfigureOpenIddict();
-        builder.ConfigureTenantManagement();
-        builder.ConfigureBlobStoring();
+        // builder.ConfigurePermissionManagement();
+        // builder.ConfigureSettingManagement();
+        // builder.ConfigureBackgroundJobs();
+        // builder.ConfigureAuditLogging();
+        // builder.ConfigureFeatureManagement();
+        // builder.ConfigureIdentity();
+        // builder.ConfigureOpenIddict();
+        // builder.ConfigureTenantManagement();
+        // builder.ConfigureBlobStoring();
         
         /* Configure your own tables/entities inside here */
 
