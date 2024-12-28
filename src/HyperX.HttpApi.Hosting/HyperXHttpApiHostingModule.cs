@@ -16,7 +16,7 @@ namespace HyperX.HttpApi.Hosting;
     typeof(AbpAutofacModule),
     typeof(HyperXHttpApiModule),
     typeof(HyperXSwaggerModule),
-    typeof(HyperXFrameworkCoreModule)
+    typeof(HyperXEntityFrameworkCoreModule)
 )]
 
 public class HyperXHttpApiHostingModule : AbpModule

@@ -10,7 +10,6 @@ using HyperX.EntityFrameworkCore;
 // using HyperX.Web.Menus;
 using Volo.Abp.AspNetCore.TestBase;
 using Volo.Abp.Modularity;
-using Volo.Abp.OpenIddict;
 using Volo.Abp.UI.Navigation;
 
 namespace HyperX;

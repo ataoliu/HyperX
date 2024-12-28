@@ -1,4 +1,5 @@
-﻿using Volo.Abp.Modularity;
+﻿using HyperX.Application;
+using Volo.Abp.Modularity;
 
 namespace HyperX;
 

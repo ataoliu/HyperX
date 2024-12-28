@@ -131,6 +131,7 @@ Global
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Release|Any CPU.Build.0 = Release|Any CPU
+
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
