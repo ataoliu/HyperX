@@ -45,6 +45,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperX.Application.Caching"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperX.BackgroundJobs", "src\HyperX.BackgroundJobs\HyperX.BackgroundJobs.csproj", "{52BE4D68-26F1-438F-BCF6-DC142F518B31}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HyperX.Repository", "src\HyperX.Repository\HyperX.Repository.csproj", "{1A548788-6CE4-4A40-9BB2-195EEA10FFC9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -131,7 +133,10 @@ Global
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EAD16CF1-DE90-4D29-9B1F-36A8EC7C861C}.Release|Any CPU.Build.0 = Release|Any CPU
-
+		{1A548788-6CE4-4A40-9BB2-195EEA10FFC9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A548788-6CE4-4A40-9BB2-195EEA10FFC9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A548788-6CE4-4A40-9BB2-195EEA10FFC9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A548788-6CE4-4A40-9BB2-195EEA10FFC9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -156,6 +161,7 @@ Global
 		{6EBD4705-C341-4E69-B661-4D175F4A44E6} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{EB8685EB-531B-48FD-BDC9-05387631C5D6} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 		{52BE4D68-26F1-438F-BCF6-DC142F518B31} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
+		{1A548788-6CE4-4A40-9BB2-195EEA10FFC9} = {CA9AC87F-097E-4F15-8393-4BC07735A5B0}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {28315BFD-90E7-4E14-A2EA-F3D23AF4126F}

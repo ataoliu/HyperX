@@ -1,7 +1,7 @@
 using HyperX.Application;
 using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
-namespace HyperX.Controllers;
+namespace HyperX.HttpApi.Controllers;
 
 [ApiController]
 [Route("[controller]")]
