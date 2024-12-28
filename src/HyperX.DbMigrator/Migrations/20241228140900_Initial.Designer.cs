@@ -13,7 +13,7 @@ using Volo.Abp.EntityFrameworkCore;
 namespace HyperX.DbMigrator.Migrations
 {
     [DbContext(typeof(HyperXMigrationsDbContext))]
-    [Migration("20241228133227_Initial")]
+    [Migration("20241228140900_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
