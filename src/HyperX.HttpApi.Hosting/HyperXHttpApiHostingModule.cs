@@ -3,6 +3,7 @@ using HyperX.EntityFrameworkCore;
 using HyperX.Swagger;
 using Volo.Abp;
 using Volo.Abp.AspNetCore.Mvc;
+using Volo.Abp.AspNetCore.Mvc.AntiForgery;
 using Volo.Abp.Autofac;
 using Volo.Abp.Modularity;
 
@@ -24,6 +25,16 @@ public class HyperXHttpApiHostingModule : AbpModule
     public override void ConfigureServices(ServiceConfigurationContext context)
     {
         base.ConfigureServices(context);
+        // 仅在开发环境禁用防伪验证
+        if (Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development")
+        {
+            //预防 CSRF攻击的验证
+            Configure<AbpAntiForgeryOptions>(options =>
+            {
+                options.AutoValidate = false;
+            });
+
+        }
     }
 
     public override void OnApplicationInitialization(ApplicationInitializationContext context)

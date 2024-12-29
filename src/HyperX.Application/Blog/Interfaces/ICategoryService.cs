@@ -11,5 +11,11 @@ public partial interface ICategoryService
     /// 查询分类列表
     /// </summary>
     /// <returns></returns>
-    Task<QueryCategoryDto?> GetCategoryAsync();
+    public Task<QueryCategoryDto?> GetCategoryAsync(int id);
+    /// <summary>
+    /// 保存数据
+    /// </summary>
+    /// <param name="dto"></param>
+    /// <returns></returns>
+    public Task Save(CategoryDto dto);
 }
